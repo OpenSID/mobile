@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../core.dart';
+import 'package:my_talok/config/routes/route.gr.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  final router = AppRouter();
+
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'myTalok',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        textTheme: GoogleFonts.muliTextTheme(),
-        backgroundColor: Colors.white,
-      ),
-      debugShowCheckedModeBanner: false,
-      defaultTransition: Transition.cupertino,
-      opaqueRoute: Get.isOpaqueRouteDefault,
-      popGesture: Get.isPopGestureEnable,
-      transitionDuration: Duration(microseconds: 230),
-      initialBinding: MainBinding(),
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
-    );
+    return MaterialApp(
+        title: 'myTalok',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          textTheme: GoogleFonts.muliTextTheme(),
+          backgroundColor: Colors.white,
+        ),
+        // debugShowCheckedModeBanner: false,
+        home: MaterialApp.router(
+            routeInformationParser: router.defaultRouteParser(),
+            routerDelegate: router.delegate()));
   }
 }
