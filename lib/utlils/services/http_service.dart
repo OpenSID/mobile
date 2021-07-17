@@ -5,7 +5,7 @@ import 'dart:io';
 import 'package:device_info/device_info.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:my_talok/utlils/helpers/models/handleerrormodel.dart';
+import 'package:opensid/utlils/helpers/models/handleerrormodel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HttpService {

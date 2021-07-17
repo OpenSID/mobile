@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_talok/config/routes/route.gr.dart';
+import 'package:opensid/config/routes/route.gr.dart';
 
 void main() => runApp(MyApp());
 

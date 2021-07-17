@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_talok/core/auth/login/bloc/login_bloc.dart';
-import 'package:my_talok/core/auth/login/screen/tombol_login_screen.dart';
-import 'package:my_talok/core/auth/login/service/login_service.dart';
-import 'package:my_talok/utlils/ui/styles/colors.dart';
-import 'package:my_talok/utlils/ui/styles/fonts.dart';
+import 'package:opensid/core/auth/login/bloc/login_bloc.dart';
+import 'package:opensid/core/auth/login/screen/tombol_login_screen.dart';
+import 'package:opensid/core/auth/login/service/login_service.dart';
+import 'package:opensid/utlils/ui/styles/colors.dart';
+import 'package:opensid/utlils/ui/styles/fonts.dart';
 import 'form_login_screen.dart';
 import 'package:formz/formz.dart';
 

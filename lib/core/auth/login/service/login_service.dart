@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
-import 'package:my_talok/core/auth/login/models/sign_model/sign_model.dart';
-import 'package:my_talok/core/auth/login/models/token_model/token_model.dart';
-import 'package:my_talok/utlils/services/http_service.dart';
+import 'package:opensid/core/auth/login/models/sign_model/sign_model.dart';
+import 'package:opensid/core/auth/login/models/token_model/token_model.dart';
+import 'package:opensid/utlils/services/http_service.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

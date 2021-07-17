@@ -23,7 +23,7 @@ class AppRouter extends _i1.RootStackRouter {
         builder: (_) {
           return _i3.SplashScreen();
         }),
-    Mulai.name: (routeData) => _i1.MaterialPageX<dynamic>(
+    AwalScreen.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
           return const _i4.AwalScreen();
@@ -43,7 +43,7 @@ class AppRouter extends _i1.RootStackRouter {
   @override
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig(SplashScreen.name, path: '/'),
-        _i1.RouteConfig(Mulai.name, path: '/mulai'),
+        _i1.RouteConfig(AwalScreen.name, path: '/mulai'),
         _i1.RouteConfig(LoginScreen.name, path: '/login'),
         _i1.RouteConfig(Home.name, path: '/home')
       ];
@@ -55,10 +55,10 @@ class SplashScreen extends _i1.PageRouteInfo {
   static const String name = 'SplashScreen';
 }
 
-class Mulai extends _i1.PageRouteInfo {
-  const Mulai() : super(name, path: '/mulai');
+class AwalScreen extends _i1.PageRouteInfo {
+  const AwalScreen() : super(name, path: '/mulai');
 
-  static const String name = 'Mulai';
+  static const String name = 'AwalScreen';
 }
 
 class LoginScreen extends _i1.PageRouteInfo {

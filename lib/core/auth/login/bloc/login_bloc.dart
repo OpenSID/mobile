@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
-import 'package:my_talok/core/auth/login/service/login_service.dart';
-import 'package:my_talok/core/auth/login/models/form_model/form_model.dart';
+import 'package:opensid/core/auth/login/service/login_service.dart';
+import 'package:opensid/core/auth/login/models/form_model/form_model.dart';
 part 'login_event.dart';
 part 'login_state.dart';
 

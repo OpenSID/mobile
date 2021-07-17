@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_talok/core/auth/login/bloc/login_bloc.dart';
-import 'package:my_talok/utlils/ui/styles/colors.dart';
+import 'package:opensid/core/auth/login/bloc/login_bloc.dart';
+import 'package:opensid/utlils/ui/styles/colors.dart';
 
 Positioned buildTombol(bool showShadow) {
   return Positioned(

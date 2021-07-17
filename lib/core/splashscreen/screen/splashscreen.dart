@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:my_talok/core/splashscreen/service/splash_screen.dart';
-import 'package:my_talok/utlils/services/geo_service.dart';
+import 'package:opensid/core/splashscreen/service/splash_screen.dart';
+import 'package:opensid/utlils/services/geo_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -35,14 +35,18 @@ class _SplashScreen extends State<SplashScreen> {
           }
         } catch (e) {
           context.replaceRoute(PageRouteInfo('LoginScreen', path: '/login'));
+          // context.replaceRoute(PageRouteInfo('AwalScreen', path: '/mulai'));
         }
       } else {
-        print('masuk false');
+        print('belum setting url');
         // ambil lokasi gps
         final _lokasi = await GeoService().determinePosition();
         print(_lokasi);
         // untuk menghindari pengaturan awal. redirect langsung ke login
-        context.replaceRoute(PageRouteInfo('LoginScreen', path: '/login'));
+        // context.replaceRoute(PageRouteInfo('LoginScreen', path: '/login'));
+
+        // ke pengaturan awal
+        context.replaceRoute(PageRouteInfo('AwalScreen', path: '/mulai'));
       }
     });
 

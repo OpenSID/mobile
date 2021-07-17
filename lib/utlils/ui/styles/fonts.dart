@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:my_talok/utlils/ui/styles/colors.dart';
+import 'package:opensid/utlils/ui/styles/colors.dart';
 
 // Style judul
 var mTitleStyle = GoogleFonts.inter(

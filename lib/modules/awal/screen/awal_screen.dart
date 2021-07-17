@@ -28,7 +28,53 @@ class AwalScreenState extends State<AwalScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    final _sizeW = MediaQuery.of(context).size.width;
+    final _sizeH = MediaQuery.of(context).size.height;
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: _sizeH - 60,
+            width: _sizeW,
+            color: Color(0xff2BA9E6),
+            child: Column(
+              children: [
+                Padding(padding: EdgeInsets.only(top: 120)),
+                Container(
+                  width: _sizeW,
+                  height: 150,
+                  child: Image(image: AssetImage('assets/png/log_embos.png')),
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: _sizeW,
+            height: 60,
+            decoration: new BoxDecoration(
+              gradient: new LinearGradient(
+                  colors: [
+                    const Color(0xFF79CFF7),
+                    const Color(0xFF0333B0),
+                  ],
+                  begin: const FractionalOffset(0.0, 0.0),
+                  end: const FractionalOffset(.7, 0.0),
+                  stops: [0.0, 1.0],
+                  tileMode: TileMode.clamp),
+            ),
+            child: Center(
+              child: Text(
+                'Mulai',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                ),
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 
   void _load() {
